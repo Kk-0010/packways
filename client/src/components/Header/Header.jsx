@@ -60,10 +60,13 @@ const Header = () => {
     >
       <nav className="max-w-7xl px-2 sm:px-3 md:px-5 lg:mx-auto py-0.5 flex justify-between items-center">
         {/* Logo or Brand Name - Visible on all screens */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 relative">
           <Link to="/">
-            <img className="h-14 sm:h-18 py-2" src={Logo} alt="Packways_Logo" />
+            <img className="h-18 sm:h-20 py-2" src={Logo} alt="Packways_Logo" />
           </Link>
+          <p className="absolute top-13 sm:top-14.5 right-3 sm:right-3.5 text-[8px] sm:text-[9px] italic font-semibold text-[#1775e5]">
+            Over 60 Years of trust
+          </p>
         </div>
 
         {/* Desktop Navigation - Hide on small screens, show on large screens */}
@@ -113,7 +116,7 @@ const Header = () => {
               <IconButton
                 variant="outline"
                 size="icon"
-                className="h-10 w-10 border-none shadow-none"
+                className="h-10 w-10 border-none shadow-none bg-transparent"
               >
                 <Menu className="size-6 text-gray-900" />
                 <span className="sr-only">Toggle navigation menu</span>
