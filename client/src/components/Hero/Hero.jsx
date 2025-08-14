@@ -3,7 +3,7 @@ import BlueTruck from "../../assets/blue-truck.png";
 export default function Hero() {
   return (
     <div className="relative h-100vh max-w-[1536px] mx-auto">
-      <section className="h-screen mt-24 max-w-7xl px-3 sm:px-5 md:px-7 lg:mx-auto">
+      <section className="h-screen mt-20 sm:mt-24 max-w-7xl px-3 sm:px-5 md:px-7 lg:mx-auto">
         <div className="bg-blue-100 rounded-4xl p-8 sm:py-10 sm:px-16">
           {/* Heading */}
           <h1 className="xl:max-w-5xl text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-black leading-tight font-figtree">

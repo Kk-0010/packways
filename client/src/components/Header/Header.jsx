@@ -20,6 +20,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { Button as IconButton } from "@/components/ui/button";
 import { Button } from "../";
 import { DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Menu, ChevronDown } from "lucide-react";
@@ -109,14 +110,14 @@ const Header = () => {
         <div className="lg:hidden">
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
-              <Button
+              <IconButton
                 variant="outline"
                 size="icon"
-                className="h-10 w-10 border-none"
+                className="h-10 w-10 border-none shadow-none"
               >
                 <Menu className="size-6 text-gray-900" />
                 <span className="sr-only">Toggle navigation menu</span>
-              </Button>
+              </IconButton>
             </SheetTrigger>
             <SheetContent side="right">
               <SheetHeader>

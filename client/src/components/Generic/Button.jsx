@@ -11,7 +11,7 @@ const Button = ({
       ? "bg-blue-500 text-white hover:bg-blue-600 shadow-lg"
       : type === "secondary"
       ? "border border-blue-500 hover:border-blue-600 shadow-lg"
-      : "";
+      : type === "outline" ? "" : "";
 
   let buttonSize =
     size === "lg"
