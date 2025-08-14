@@ -6,7 +6,7 @@ export default function Hero() {
       <section className="h-screen mt-24 max-w-7xl px-3 sm:px-5 md:px-7 lg:mx-auto">
         <div className="bg-blue-100 rounded-4xl p-8 sm:py-10 sm:px-16">
           {/* Heading */}
-          <h1 className="max-w-sm md:max-w-xl lg:max-w-3xl border border-red-500 text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl font-black leading-tight font-figtree">
+          <h1 className="max-w-sm md:max-w-xl lg:max-w-3xl text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl font-black leading-tight font-figtree">
             <span className="text-primary">DISCOVER</span> WITH OUR INTEGRATED{" "}
             <span className="text-primary">LOGISTICS</span>
           </h1>
