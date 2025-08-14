@@ -25,7 +25,7 @@ import { Button } from "../";
 import { DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Menu, ChevronDown } from "lucide-react";
 import { navItems } from "../../constants";
-import Logo from "../../assets/logo/logo2.PNG";
+import Logo from "../../assets/logo/logo2.png";
 
 const Header = () => {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
