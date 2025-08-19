@@ -1,4 +1,4 @@
-import BlueTruck from "../../assets/blue-truck.png";
+import BlueTruck from "../../assets/truck02.png";
 
 export default function Hero() {
   return (

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import HouseBox from "../../assets/house-box.png"; 
-import InternationalImg from "../../assets/international1.png";
-import WarehousingImg from "../../assets/warehousing1.jpg";
-import PetImg from "../../assets/pet1.png";
+import InternationalImg from "../../assets/international.png";
+import WarehousingImg from "../../assets/warehousing.jpg";
+import PetImg from "../../assets/pet.png";
 
 export default function Services() {
   const fadeIn = {
