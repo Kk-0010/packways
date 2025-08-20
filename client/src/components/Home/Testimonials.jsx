@@ -7,6 +7,7 @@ import {
 import {
   Avatar,
   AvatarFallback,
+  AvatarImage,
 } from "../../components/ui/avatar";
 
 import { testimonials } from "../../constants";
@@ -22,9 +23,9 @@ export default function Testimonials() {
         {/* Infinite Scrolling Row */}
         <div className="group overflow-hidden relative w-full py-4">
           <div className="flex gap-3 sm:gap-4 md:gap-6 lg:gap-4 animate-scroll">
-            {testimonials.map((t, i) => (
+            {testimonials.map(({ id, name, role, feedback, avatar }) => (
               <Card
-                key={i}
+                key={id}
                 className="
                   rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 
                   flex-shrink-0
@@ -32,26 +33,28 @@ export default function Testimonials() {
                 "
               >
                 <CardHeader className="flex items-center space-x-3 sm:space-x-4">
-                  <Avatar className="h-10 w-10 sm:h-12 sm:w-12 bg-blue-200 flex justify-center -mt-1">
+                  <Avatar className="h-10 w-10 sm:h-12 sm:w-12 bg-transparent flex justify-center -mt-1">
+                    <AvatarImage src={avatar} alt={name} />
                     <AvatarFallback className="text-blue-600 font-semibold bg-blue-50 rounded-full w-full h-full flex items-center justify-center text-sm sm:text-base">
-                      {t.name.charAt(0)}
+                      {name.charAt(0)}
                     </AvatarFallback>
                   </Avatar>
+
                   <div>
-                    <CardTitle className="text-sm sm:text-base md:text-lg mb-1">{t.name}</CardTitle>
+                    <CardTitle className="text-sm sm:text-base md:text-lg mb-1">{name}</CardTitle>
                     <div className="hidden md:flex">
-                      <p className="text-xs sm:text-sm text-gray-500 -mt-1 mb-0">{t.role}</p>
+                      <p className="text-xs sm:text-sm text-gray-500 -mt-1 mb-0">{role}</p>
                     </div>
                   </div>
                 </CardHeader>
 
                 <div className="block md:hidden">
-                  <p className="text-xs sm:text-sm text-gray-500 -mt-1 mb-0 pl-7">{t.role}</p>
+                  <p className="text-xs sm:text-sm text-gray-500 -mt-1 mb-0 pl-7">{role}</p>
                 </div>
                     
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed text-[12px] sm:text-sm md:text-base my-0">
-                    “{t.feedback}”
+                    “{feedback}”
                   </p>
                 </CardContent>
               </Card>

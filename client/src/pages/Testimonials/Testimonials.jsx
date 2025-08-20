@@ -16,25 +16,25 @@ import { testimonials } from "../../constants";
 function TestimonialRow({ items }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-      {items.map((t, i) => (
+      {items.map(({id, name, role, feedback, avatar}) => (
         <Card
-          key={i}
+          key={id}
           className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full"
         >
           <CardHeader className="flex items-center space-x-4">
-            <Avatar className="h-12 w-12 bg-blue-200 flex items-center justify-center">
-              {/* Removed AvatarImage since no images */}
+            <Avatar className="h-12 w-12 bg-transparent flex items-center justify-center">
+              <AvatarImage src={avatar} alt={name} />
               <AvatarFallback className="text-blue-600 font-semibold bg-blue-50 rounded-full w-full h-full flex items-center justify-center">
-                {t.name.charAt(0)}
+                {name.charAt(0)}
               </AvatarFallback>
             </Avatar>
             <div>
-              <CardTitle className="text-lg">{t.name}</CardTitle>
-              <p className="text-sm text-gray-500">{t.role}</p>
+              <CardTitle className="text-lg">{name}</CardTitle>
+              <p className="text-sm text-gray-500">{role}</p>
             </div>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-600 leading-relaxed">“{t.feedback}”</p>
+            <p className="text-gray-600 leading-relaxed">“{feedback}”</p>
           </CardContent>
         </Card>
       ))}
