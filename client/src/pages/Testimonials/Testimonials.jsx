@@ -22,9 +22,11 @@ function TestimonialRow({ items }) {
           className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full"
         >
           <CardHeader className="flex items-center space-x-4">
-            <Avatar className="h-12 w-12">
-              <AvatarImage src={t.image} alt={t.name} />
-              <AvatarFallback>{t.name.charAt(0)}</AvatarFallback>
+            <Avatar className="h-12 w-12 bg-blue-200 flex items-center justify-center">
+              {/* Removed AvatarImage since no images */}
+              <AvatarFallback className="text-blue-600 font-semibold bg-blue-50 rounded-full w-full h-full flex items-center justify-center">
+                {t.name.charAt(0)}
+              </AvatarFallback>
             </Avatar>
             <div>
               <CardTitle className="text-lg">{t.name}</CardTitle>
@@ -42,8 +44,9 @@ function TestimonialRow({ items }) {
 
 export default function Testimonials() {
   // Repeat testimonials enough times to make 8 rows × 3 cards = 24 cards
-  const repeatedTestimonials = Array.from({ length: 31 }, (_, i) => 
-    testimonials[i % testimonials.length]
+  const repeatedTestimonials = Array.from(
+    { length: 31 },
+    (_, i) => testimonials[i % testimonials.length]
   );
 
   // Break into chunks of 3 for rows
