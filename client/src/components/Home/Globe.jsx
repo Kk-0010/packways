@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import HouseBox from "../../assets/house-box.png"; 
+import HouseBox from "../../assets/house-box.jpg"; 
 import InternationalImg from "../../assets/international.png";
-import WarehousingImg from "../../assets/warehousing.jpg";
+import WarehousingImg from "../../assets/warehouse.jpg";
 import PetImg from "../../assets/pet.png";
 
 export default function Services() {

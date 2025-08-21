@@ -28,9 +28,9 @@ export default function Testimonials() {
         </h2>
 
         <Carousel
-          plugins={[Autoplay({ delay: 2500, stopOnInteraction: false })]} // 🔹 auto scroll
-          opts={{ loop: true, autoplay: true, align: "start"}}
 
+          plugins={[Autoplay({ delay: 2500, stopOnInteraction: false })]} // 🔹 auto scroll  I have to Change it
+          opts={{ loop: true, speed: 2, autoplay: true}}
           className="w-full"
         >
           <CarouselContent className="flex gap-0 sm:gap-4 md:gap-6 lg:gap-26">
