@@ -8,7 +8,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Home, About, Testimonials} from "./pages";
+import { Home, About, Testimonials, CustomRegulations} from "./pages";
 
 
 const router = createBrowserRouter(
@@ -17,6 +17,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="testimonials" element={<Testimonials />} />
+      <Route path="custom-regulations" element={<CustomRegulations />} />
     </Route>
   )
 );
