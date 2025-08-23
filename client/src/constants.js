@@ -14,7 +14,7 @@ export const navItems = [
   },
   { id: 1, label: "TESTIMONIALS", to: "/testimonials" },
   { id: 1, label: "OUR CLIENTELE", to: "/investor" },
-  { id: 1, label: "OUR NETWORK", to: "/web3-infrastructure" },
+  { id: 1, label: "OUR NETWORK", to: "/our-network" },
   { id: 1, label: "CUSTOM REGULATIONS", to: "/custom-regulations" },
 ];
 
@@ -305,6 +305,7 @@ export const testimonials = [
   },
 ];
 
+// FOOTER CONSTANTS
 // Navigation Links
 export const FOOTER_NAV_LINKS = [
   { name: "Home", path: "/" },
@@ -326,4 +327,35 @@ export const FOOTER_CERTIFICATIONS = [
   { src: ISOLogo, alt: "ISO" },
   { src: IAMLogo, alt: "IAM" },
   { src: ARALogo, alt: "ARA" },
+];
+
+// src/constants/constants.js
+
+export const NETWORK_LOCATIONS = [
+  {
+    city: "NEW DELHI (HEAD OFFICE)",
+    company: "Packways Ace Relocations (Intl. Division of Packways Pvt. Ltd.)",
+    address: "B 275, Okhla Industrial Area, Phase I, New Delhi 110 020 INDIA",
+    tel: "(91-11) 46678246, 26812702",
+    mobile: "+91-9810048922",
+    email: "delhi@packwaysrelocations.com",
+    website: "www.packwaysrelocations.com",
+    note: "All Rates Enquiries Should be Directed to Our Corporate Office In New Delhi Irrespective Of Origin/ Destination Of Shipment In India."
+  },
+  {
+    city: "MUMBAI",
+    company: "Packways Pvt. Ltd.",
+    address: "C 5, Ansa Industrial Estate, Saki Vihar Road, Andheri (East), Mumbai 400072",
+    tel: "(91-22) 28473064",
+    mobile: "+91-9619343155",
+    email: "mumbai@packwaysrelocations.com",
+  },
+  {
+    city: "CHENNAI",
+    company: "Packways International (Madras)",
+    address: "No. 4, Numbal Road, Vellapan Chavedi, Chennai - 600077",
+    tel: "044 - 26271755",
+    mobile: "09790971934 - 09790971935",
+    email: "chennai@packwaysrelocations.com",
+  },
 ];

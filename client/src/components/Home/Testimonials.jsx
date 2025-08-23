@@ -28,24 +28,17 @@ export default function Testimonials() {
         </h2>
 
         <Carousel
-
-          plugins={[Autoplay({ delay: 2500, stopOnInteraction: false })]} // 🔹 auto scroll  I have to Change it
-          opts={{ loop: true, speed: 2, autoplay: true}}
+          plugins={[Autoplay({ delay: 1500, stopOnInteraction: false })]} // faster speed
+          opts={{ loop: true }}
           className="w-full"
         >
-          <CarouselContent className="flex gap-0 sm:gap-4 md:gap-6 lg:gap-26">
+          <CarouselContent className="flex gap-4 px-4">
             {testimonials.map(({ id, name, role, feedback, avatar }) => (
               <CarouselItem
                 key={id}
-                className="basis-auto sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+                className="basis-3/4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex-shrink-0"
               >
-                <Card
-                  className="
-                    rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 
-                    flex-shrink-0
-                    w-52 sm:w-64 md:w-80 lg:w-96 h-70 sm:h-64 md:h-80
-                  "
-                >
+                <Card className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-72 flex flex-col">
                   <CardHeader className="flex items-center space-x-3 sm:space-x-4">
                     <Avatar className="h-10 w-10 sm:h-12 sm:w-12 bg-transparent flex justify-center -mt-1">
                       <AvatarImage src={avatar} alt={name} />
@@ -53,7 +46,6 @@ export default function Testimonials() {
                         {name.charAt(0)}
                       </AvatarFallback>
                     </Avatar>
-
                     <div>
                       <CardTitle className="text-sm sm:text-base md:text-lg mb-1">
                         {name}
@@ -72,8 +64,8 @@ export default function Testimonials() {
                     </p>
                   </div>
 
-                  <CardContent>
-                    <p className="text-gray-600 leading-relaxed text-[12px] sm:text-sm md:text-base my-0">
+                  <CardContent className="flex-grow custom">
+                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base my-0">
                       “{feedback}”
                     </p>
                   </CardContent>
