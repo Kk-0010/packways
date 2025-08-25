@@ -8,8 +8,13 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Home, About, Testimonials, CustomRegulations} from "./pages";
-
+import {
+  Home,
+  About,
+  Testimonials,
+  CustomRegulations,
+  OurNetwork,
+} from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="testimonials" element={<Testimonials />} />
       <Route path="custom-regulations" element={<CustomRegulations />} />
+      <Route path="our-network" element={<OurNetwork />} />
     </Route>
   )
 );
