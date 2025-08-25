@@ -1,7 +1,16 @@
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
+import { Phone, Smartphone, Mail, Globe, MapPin } from "lucide-react";
 import ISOLogo from "./assets/aboutUs/iso-logo.jpg";
 import IAMLogo from "./assets/aboutUs/iam-logo.png";
 import ARALogo from "./assets/aboutUs/ara-logo.png";
+
+export const ICONS = {
+  Phone,
+  Smartphone,
+  Mail,
+  Globe,
+  MapPin,
+};
 
 export const navItems = [
   { id: 1, label: "HOME", to: "/" },
@@ -329,7 +338,7 @@ export const FOOTER_CERTIFICATIONS = [
   { src: ARALogo, alt: "ARA" },
 ];
 
-// src/constants/constants.js
+// Network Locations
 
 export const NETWORK_LOCATIONS = [
   {
@@ -359,3 +368,4 @@ export const NETWORK_LOCATIONS = [
     email: "chennai@packwaysrelocations.com",
   },
 ];
+
