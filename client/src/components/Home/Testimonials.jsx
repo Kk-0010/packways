@@ -28,44 +28,35 @@ export default function Testimonials() {
         </h2>
 
         <Carousel
-          plugins={[Autoplay({ delay: 1500, stopOnInteraction: false })]} // faster speed
+          plugins={[Autoplay({ delay: 2500, stopOnInteraction: true })]} // faster speed
           opts={{ loop: true }}
           className="w-full"
         >
-          <CarouselContent className="flex gap-4 px-4">
+          <CarouselContent className="flex gap-2 px-4">
             {testimonials.map(({ id, name, role, feedback, avatar }) => (
               <CarouselItem
                 key={id}
-                className="basis-3/4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex-shrink-0"
+                className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex-shrink-0"
               >
-                <Card className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-72 flex flex-col">
-                  <CardHeader className="flex items-center space-x-3 sm:space-x-4">
-                    <Avatar className="h-10 w-10 sm:h-12 sm:w-12 bg-transparent flex justify-center -mt-1">
+                <Card className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-72 flex flex-col justify-center">
+                  <CardHeader className="flex flex-col items-center justify-center space-y-2">
+                    <Avatar className="h-18 w-18 sm:h-20 sm:w-20 bg-transparent flex justify-center rounded-none">
                       <AvatarImage src={avatar} alt={name} />
-                      <AvatarFallback className="text-blue-600 font-semibold bg-blue-50 rounded-full w-full h-full flex items-center justify-center text-sm sm:text-base">
+                      <AvatarFallback className="text-blue-600 font-semibold bg-blue-50 w-full h-full flex items-center justify-center text-base sm:text-lg">
                         {name.charAt(0)}
                       </AvatarFallback>
                     </Avatar>
-                    <div>
-                      <CardTitle className="text-sm sm:text-base md:text-lg mb-1">
-                        {name}
-                      </CardTitle>
-                      <div className="hidden md:flex">
-                        <p className="text-xs sm:text-sm text-gray-500 -mt-1 mb-0">
-                          {role}
-                        </p>
-                      </div>
-                    </div>
-                  </CardHeader>
 
-                  <div className="block md:hidden">
-                    <p className="text-xs sm:text-sm text-gray-500 -mt-1 mb-0 pl-7">
+                    <p className="text-base sm:text-base mb-0 -mt-2 text-gray-800 font-semibold text-center break-words max-w-[95%] mx-auto">
                       {role}
                     </p>
-                  </div>
 
+                    <CardTitle className="text-sm sm:text-sm text-gray-500 text-center max-w-[95%] mx-auto pt-4 ">
+                      {name}
+                    </CardTitle>
+                  </CardHeader>
                   <CardContent className="flex-grow custom">
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base my-0">
+                    <p className="text-gray-900 leading-relaxed text-sm my-0">
                       “{feedback}”
                     </p>
                   </CardContent>
