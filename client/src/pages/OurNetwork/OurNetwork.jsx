@@ -2,11 +2,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { NETWORK_LOCATIONS } from "../../constants";
+import NetworkBanner from "../../assets/our-network.jpg";
 
 export default function OurNetwork() {
   return (
     <section className="w-full min-h-screen bg-white pt-24 pb-16 px-6">
       <div className="max-w-5xl mx-auto">
+        <img 
+          src={NetworkBanner} 
+          alt="Our Network" 
+          className="w-full h-64 object-cover rounded-lg mb-6 shadow"
+        />
         {/* Page Title */}
         <h1 className="text-3xl font-bold text-blue-900 mb-6">Our Network</h1>
 
