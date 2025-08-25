@@ -232,6 +232,14 @@ export const testimonials = [
   },
   {
     id: 22,
+    name: "Vishal Sharma",
+    role: "Ogilvy & Mather",
+    avatar:
+      "https://freeyorkk.b-cdn.net/wp-content/uploads/2017/01/Ogilvy-Mather.jpeg",
+    feedback: "Excellent work.",
+  },
+  {
+    id: 23,
     name: "Vishal Bhardwaj",
     role: "Citibank",
     avatar: "https://www.citi.com/CBOL/IA/Angular/assets/citiredesign.svg",
@@ -239,7 +247,7 @@ export const testimonials = [
       "Excellent! Very cooperative & helpful. Very good service. Efficient.",
   },
   {
-    id: 23,
+    id: 24,
     name: "Larry G Polgase",
     role: "Hydro Tasmania Consulting Pvt Ltd",
     avatar:
@@ -247,7 +255,7 @@ export const testimonials = [
     feedback: "Very professional service by all staff. Prompt attention.",
   },
   {
-    id: 24,
+    id: 25,
     name: "Angus Macdonald",
     role: "Oriental Consultants",
     avatar:
@@ -256,15 +264,16 @@ export const testimonials = [
       "A very professional service. Recommend to everyone of my colleagues.",
   },
   {
-    id: 25,
+    id: 26,
     name: "Mark Cerny",
     role: "Pramet Tools India (P) Ltd",
     avatar: "https://cdn-images.himalayas.app/f6mv9qwtu7mdnnuxp3k9xoglucjy",
     feedback:
       "We were pleasantly surprised with amazing service & attitude of this Company & will recommend to other expats. Thank you for professionalism.",
   },
+  
   {
-    id: 26,
+    id: 27,
     name: "Gavin Abbott",
     role: "DMRC Office",
     avatar:
@@ -272,7 +281,7 @@ export const testimonials = [
     feedback: "Excellent service.",
   },
   {
-    id: 27,
+    id: 28,
     name: "Abderrezak Aourir",
     role: "Embassy of Algeria",
     avatar:
@@ -281,7 +290,7 @@ export const testimonials = [
       "The team is very professional. Excellent. Keep up the good work.",
   },
   {
-    id: 28,
+    id: 29,
     name: "Sam Peter Sanal",
     role: "Hewitt",
     avatar:
@@ -289,14 +298,15 @@ export const testimonials = [
     feedback: "Excellent! Neat & efficient.",
   },
   {
-    id: 29,
+    id: 30,
     name: "Abhinav Verma",
     role: "Bharti Airtel",
     avatar: "https://www.airtel.in/assets/images/airtel-logo.png",
     feedback: "Very happy with the service. Thanks for your cooperation.",
   },
+  
   {
-    id: 30,
+    id: 31,
     name: "Ms Sangita",
     role: "Nokia India",
     avatar:
@@ -304,14 +314,7 @@ export const testimonials = [
     feedback:
       "Excellent job. It was executed very well & the staff was very helpful & courteous.",
   },
-  {
-    id: 31,
-    name: "Vishal Sharma",
-    role: "Ogilvy & Mather",
-    avatar:
-      "https://freeyorkk.b-cdn.net/wp-content/uploads/2017/01/Ogilvy-Mather.jpeg",
-    feedback: "Excellent work.",
-  },
+  
 ];
 
 // FOOTER CONSTANTS
