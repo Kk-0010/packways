@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone, Smartphone } from "lucide-react";
-import ContactBanner from "../../assets/contactus.jpg";
+import ContactBanner from "../../assets/contact2.jpg";
 import { FOOTER_CONTACTS } from "../../constants";
 import { Link } from "react-router-dom";
 import { Contact as ContactComp } from "../../components";
