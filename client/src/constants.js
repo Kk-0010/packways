@@ -405,3 +405,96 @@ export const SOCIAL_LINKS = [
     hoverColor: "hover:text-pink-500",
   },
 ];
+
+export const ContactFormFields = [
+  {
+    name: "First Name",
+    label: "First Name",
+    placeholder: "John",
+    type: "text",
+    component: "input",
+    required: true,
+    rules: {
+      required: "First Name is required",
+      minLength: {
+        value: 3,
+        message: "First Name must be at least 3 characters long",
+      },
+      maxLength: {
+        value: 100,
+        message: "First Name must not exceed 100 characters",
+      },
+    },
+  },
+  {
+    name: "Last Name",
+    label: "Last Name",
+    placeholder: "Doe",
+    type: "text",
+    component: "input",
+    required: true,
+    rules: {
+      required: "Last Name is required",
+      minLength: {
+        value: 3,
+        message: "Last Name must be at least 3 characters long",
+      },
+      maxLength: {
+        value: 100,
+        message: "Last Name must not exceed 100 characters",
+      },
+    },
+  },
+  {
+    name: "Company",
+    label: "Company (Optional)",
+    placeholder: "Company Name",
+    type: "text",
+    component: "input",
+    required: false,
+  },
+  {
+    name: "Address",
+    label: "Address",
+    placeholder: "Address",
+    type: "text",
+    component: "input",
+    required: false,
+  },
+  {
+    name: "Email",
+    label: "Email",
+    placeholder: "john.doe@example.com",
+    type: "email",
+    component: "input",
+    required: true,
+    rules: {
+      required: "Email is required",
+      pattern: {
+        value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+        message: "Please enter a valid email address",
+      },
+    },
+  },
+  {
+    name: "Phone",
+    label: "Phone",
+    placeholder: "+91 12345-67890",
+    type: "tel",
+    component: "input",
+    required: false,
+    rules: {
+      pattern: {
+        value: /^\+?[0-9\s\-().]{7,15}$/,
+        message: "Please enter a valid phone number",
+      },
+    },
+  },
+  {
+    name: "Message",
+    label: "Message",
+    type: "textarea",
+    placeholder: "Enter your message...",
+    required: false,
+  },
+];
