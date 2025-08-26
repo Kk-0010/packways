@@ -5,5 +5,6 @@ import Hero from "./Hero/Hero";
 import Globe from "../components/Home/Globe";
 import Button from "./Generic/Button";
 import Testimonials from "../components/Home/Testimonials";
+import WhatsappChat from "./WhatsappChat/WhatsappChat";
 
-export { Header, Footer, ScrollToTop, Hero, Button, Globe, Testimonials };
+export { Header, Footer, ScrollToTop, Hero, Button, Globe, Testimonials, WhatsappChat };

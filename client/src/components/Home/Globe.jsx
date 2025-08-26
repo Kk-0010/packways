@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import HouseBox from "../../assets/house-box.jpg"; 
+import HouseBox from "../../assets/house-box1.jpg"; 
 import InternationalImg from "../../assets/international.png";
 import WarehousingImg from "../../assets/warehouse.jpg";
 import PetImg from "../../assets/pet.png";

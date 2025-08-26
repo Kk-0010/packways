@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Header, Footer, ScrollToTop } from "./components";
+import { Header, Footer, ScrollToTop, WhatsappChat } from "./components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <ScrollToTop />
       <Header />
       <Outlet />
+      <WhatsappChat />
       <Footer />
     </>
   );
