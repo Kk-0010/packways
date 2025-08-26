@@ -1,5 +1,5 @@
 import { alliedServicesData } from "../../constants";
-import ALLIEDSERVICES from "../../assets/services/allied-services1.jpg";
+import ALLIEDSERVICES from "../../assets/services/allied-services.jpg";
 
 const AlliedServices = () => {
   return (
