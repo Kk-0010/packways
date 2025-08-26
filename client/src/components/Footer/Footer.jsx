@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import {
   Mail,
   Phone,
+  Smartphone,
   MapPin,
   Linkedin,
   Twitter,
@@ -81,12 +82,26 @@ export default function Footer() {
                 {FOOTER_CONTACTS.email}
               </Link>
             </li>
-            <li className="flex flex-wrap gap-4">
-              {FOOTER_CONTACTS.phones.map((phone, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <Phone size={16} />
-                  <Link to={`tel:${phone}`} className="hover:text-blue-600">
-                    {phone}
+            <li className="flex flex-wrap gap-2">
+              {/* Telephone Numbers */}
+              {FOOTER_CONTACTS.phones.map((tel, index) => (
+                <div key={`tel-${index}`} className="flex items-center gap-2">
+                  <Phone size={16} /> {/* Landline Icon */}
+                  <Link to={`tel:${tel}`} className="hover:text-blue-600">
+                    {tel}
+                  </Link>
+                </div>
+              ))}
+
+              {/* Mobile Numbers */}
+              {FOOTER_CONTACTS.mobiles.map((mobile, index) => (
+                <div
+                  key={`mobile-${index}`}
+                  className="flex items-center gap-2"
+                >
+                  <Smartphone size={16} /> {/* Mobile Icon */}
+                  <Link to={`tel:${mobile}`} className="hover:text-blue-600">
+                    {mobile}
                   </Link>
                 </div>
               ))}
