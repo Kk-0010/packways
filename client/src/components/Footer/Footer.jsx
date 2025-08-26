@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Instagram,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import PackwaysLogo from "../../assets/logo/logo2.png";
 
@@ -8,6 +16,7 @@ import {
   FOOTER_NAV_LINKS,
   FOOTER_CONTACTS,
   FOOTER_CERTIFICATIONS,
+  SOCIAL_LINKS,
 } from "../../constants";
 
 export default function Footer() {
@@ -25,11 +34,25 @@ export default function Footer() {
             Reliable logistics & relocation services ensuring safe, fast, and
             efficient delivery across the globe.
           </p>
+
+          {/* Social Media Links */}
+          <div className="flex gap-4 mt-4">
+            {SOCIAL_LINKS.map(({ href, icon: Icon, hoverColor }, index) => (
+              <Link
+                key={index}
+                to={href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon size={32} className={`text-gray-700 ${hoverColor}`} />
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Navigation Links */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">
             Quick Links
           </h3>
           <ul className="space-y-2 text-gray-700">
@@ -45,7 +68,7 @@ export default function Footer() {
 
         {/* Contact Details */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">
             Contact Us
           </h3>
           <ul className="space-y-3 text-gray-700 text-sm">
@@ -97,7 +120,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="text-center text-gray-600 text-sm mt-10 border-t border-gray-300 pt-4">
+      <div className="text-center text-gray-600 text-sm mt-6 border-t border-gray-300 pt-4">
         © {new Date().getFullYear()} Packways. All rights reserved. |{" "}
         <Link to="/privacy" className="hover:text-blue-600">
           Privacy Policy

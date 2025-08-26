@@ -1,5 +1,5 @@
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
-import { Phone, Smartphone, Mail, Globe, MapPin } from "lucide-react";
+import { Phone, Smartphone, Mail, Globe, MapPin,Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import ISOLogo from "./assets/aboutUs/iso-logo.jpg";
 import IAMLogo from "./assets/aboutUs/iam-logo.png";
 import ARALogo from "./assets/aboutUs/ara-logo.png";
@@ -372,3 +372,25 @@ export const NETWORK_LOCATIONS = [
   },
 ];
 
+export const SOCIAL_LINKS = [
+  {
+    href: "https://www.linkedin.com",
+    icon: Linkedin,
+    hoverColor: "hover:text-blue-700",
+  },
+  {
+    href: "https://www.twitter.com",
+    icon: Twitter,
+    hoverColor: "hover:text-blue-600",
+  },
+  {
+    href: "https://www.facebook.com",
+    icon: Facebook,
+    hoverColor: "hover:text-blue-600",
+  },
+  {
+    href: "https://www.instagram.com",
+    icon: Instagram,
+    hoverColor: "hover:text-pink-500",
+  },
+];
