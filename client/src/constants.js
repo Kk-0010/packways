@@ -1,5 +1,15 @@
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
-import { Phone, Smartphone, Mail, Globe, MapPin,Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import {
+  Phone,
+  Smartphone,
+  Mail,
+  Globe,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Instagram,
+} from "lucide-react";
 import ISOLogo from "./assets/aboutUs/iso-logo.jpg";
 import IAMLogo from "./assets/aboutUs/iam-logo.png";
 import ARALogo from "./assets/aboutUs/ara-logo.png";
@@ -271,7 +281,7 @@ export const testimonials = [
     feedback:
       "We were pleasantly surprised with amazing service & attitude of this Company & will recommend to other expats. Thank you for professionalism.",
   },
-  
+
   {
     id: 27,
     name: "Gavin Abbott",
@@ -304,7 +314,7 @@ export const testimonials = [
     avatar: "https://www.airtel.in/assets/images/airtel-logo.png",
     feedback: "Very happy with the service. Thanks for your cooperation.",
   },
-  
+
   {
     id: 31,
     name: "Ms Sangita",
@@ -314,7 +324,6 @@ export const testimonials = [
     feedback:
       "Excellent job. It was executed very well & the staff was very helpful & courteous.",
   },
-  
 ];
 
 // FOOTER CONSTANTS
@@ -329,7 +338,8 @@ export const FOOTER_NAV_LINKS = [
 // Contact Details
 export const FOOTER_CONTACTS = {
   email: "delhi@packwaysrelocations.com",
-  phones: ["+91 9810048922", "26812702", "46678246"],
+  phones: ["+91 11 46678246"], // Landline (Telephone)
+  mobiles: ["+91 9811031429", "+91 9810014196", "+91 9810017395"], // Mobile Numbers
   address:
     "B - 275, Okhla Industrial Area, Phase-I New Delhi - 110 020 [INDIA]",
 };
@@ -352,12 +362,13 @@ export const NETWORK_LOCATIONS = [
     mobile: "+91 9810048922",
     email: "delhi@packwaysrelocations.com",
     website: "www.packwaysrelocations.com",
-    note: "All Rates Enquiries Should be Directed to Our Corporate Office In New Delhi Irrespective Of Origin/ Destination Of Shipment In India."
+    note: "All Rates Enquiries Should be Directed to Our Corporate Office In New Delhi Irrespective Of Origin/ Destination Of Shipment In India.",
   },
   {
     city: "MUMBAI",
     company: "Packways Pvt. Ltd.",
-    address: "C 5, Ansa Industrial Estate, Saki Vihar Road, Andheri (East), Mumbai 400072",
+    address:
+      "C 5, Ansa Industrial Estate, Saki Vihar Road, Andheri (East), Mumbai 400072",
     tel: "(91-22) 28473064",
     mobile: "+91 9619343155",
     email: "mumbai@packwaysrelocations.com",
