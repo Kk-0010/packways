@@ -14,6 +14,8 @@ import {
   Testimonials,
   CustomRegulations,
   OurNetwork,
+  AlliedServices,
+  SpectrumServices,
 } from "./pages";
 
 const router = createBrowserRouter(
@@ -24,6 +26,14 @@ const router = createBrowserRouter(
       <Route path="testimonials" element={<Testimonials />} />
       <Route path="custom-regulations" element={<CustomRegulations />} />
       <Route path="our-network" element={<OurNetwork />} />
+      <Route
+        path="/our-services/allied-services"
+        element={<AlliedServices />}
+      />
+      <Route
+        path="/our-services/spectrum-of-services"
+        element={<SpectrumServices />}
+      />
     </Route>
   )
 );

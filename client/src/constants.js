@@ -27,9 +27,16 @@ export const navItems = [
   { id: 2, label: "ABOUT US", to: "/about" },
   {
     id: 3,
-    label: "SPECTRUM OF SERVICES",
+    label: "OUR SERVICES",
     to: "",
-    items: [{ id: 1, label: "ALLIED SERVICES", to: "allied-services" }],
+    items: [
+      { id: 1, label: "ALLIED SERVICES", to: "/our-services/allied-services" },
+      {
+        id: 2,
+        label: "SPECTRUM OF SERVICES",
+        to: "/our-services/spectrum-of-services",
+      },
+    ],
   },
   { id: 1, label: "TESTIMONIALS", to: "/testimonials" },
   { id: 1, label: "OUR CLIENTELE", to: "/investor" },
@@ -403,5 +410,103 @@ export const SOCIAL_LINKS = [
     href: "https://www.instagram.com",
     icon: Instagram,
     hoverColor: "hover:text-pink-500",
+  },
+];
+
+//SERVICES
+//Allied Services
+
+export const alliedServicesData = [
+  {
+    title: "Inbound Shipment Handling",
+    description: `We strive to maintain the same high standards of quality & personalized care 
+    to move in your incoming shipment from abroad. Our professional & qualified staffs keep you posted 
+    about its impending arrival, provide guidance on customs formalities & handle all import documentation 
+    to ensure smooth & prompt customs clearance. After unpacking for random customs examination 
+    & repacking after inspection, we deliver your much-awaited treasured possessions intact to 
+    your new residence, duly unpack, assemble & set up your goods under your direction & remove 
+    all packing debris.`,
+  },
+  {
+    title: "Local Moving",
+    description: `We, at Packways Private Ltd, understand that stress related to move has very 
+    little to do with distance travelled & take short distance relocations as seriously. Whether you are 
+    moving across the street or around the earth, our professionally trained crew has the practical 
+    experience to identify potential hurdles—be it moving street or a congested stairway or difficult 
+    hoisting, to ensure a seamless move, laying strict emphasis on quality & attention to detail.`,
+  },
+  {
+    title: "Office Relocation",
+    description: `Relocating a business establishment is often a race against time. Trained to 
+    move anything from detailed sequential filing system to a complete library, special office furniture 
+    to expensive & sensitive office automation equipment, Packways Ace Relocations movers work 
+    efficiently at a frenzied pace to meet deadlines. While you take the weekend off, the efficient 
+    Packways crew reinstalls your old office in sequence at a new place so that on Monday morning, 
+    it’s business as usual!`,
+  },
+  {
+    title: "Vehicle Import/Relocation",
+    description: `Our 60 years of experience has given us the edge & expertise not only on 
+    removals of household & office goods but also on the import, export & relocation of automobiles. 
+    The Packways Ace Relocations complete service offer includes competitive packages to handle 
+    the shipment of automobiles/vehicles into & out of the country. We provide assistance in all the 
+    accompanying documentation & customs clearance required.`,
+  },
+  {
+    title: "Insurance/Risk Management",
+    description: `At Packways Ace Relocations, we do our utmost to provide the greatest care & 
+    maximum protection, but overseas movement of goods are exposed to unforeseeable risks associated 
+    with sea, air, land transportation, port & terminal activity, natural disaster etc. Comprehensive 
+    door-to-door insurance coverage is arranged & tailored to suit individual requirements at most 
+    competitive premiums for your move anywhere in the world. We monitor the claims settlement 
+    process with the insurance company to ensure expeditious reimbursement – complete follow up 
+    for total satisfaction is our goal.`,
+  },
+  {
+    title: "Warehousing",
+    description: `Storage at Packways Private Ltd.’ modern, secure, environmentally controlled 
+    warehouse facilities is the answer to all your temporary space problems. Household goods, heavy 
+    machinery, industrial equipment or office records for which there is no immediate need can be 
+    conveniently stored at our fully insured warehouse indefinitely, offering maximum security 
+    for your goods until you need them.`,
+  },
+];
+
+// Spectrum Services
+export const spectrumServicesData = [
+  {
+    title: "Pre-Move Planning",
+    description: `An experienced relocation consultant will visit your home for initial assessment of your belongings.
+    Depending on your destination, volume & nature of goods, we offer a free cost analysis with flexible
+    solutions in response to your specific needs keeping your time & budgetary parameters in mind. You are
+    also briefed how the entire move will be handled in terms of operations, logistics & material management.`,
+  },
+  {
+    title: "Superior Packing",
+    description: `Quality of packing provided at origin is the key to a successful move & this is where our skilled,
+    well-supervised, uniformed crew excels. In addition to our excellent workmanship, we use the finest
+    quality packing materials conforming to international standards. Delicate possessions, high value items,
+    objects d’art are treated with utmost care & are individually packed into customized wooden crates or
+    cases to ensure special protection.`,
+  },
+  {
+    title: "Worldwide Shipping",
+    description: `After completion of packing & proper inventorization, your goods are loaded into the container type best
+    suited to your move requirements. This could mean packing into wooden lift vans, customized sea or air
+    cases or directly into 20ft or 40 ft ship container. We attend to all the details & logistics of your
+    overseas move including export documentation & customs formalities. As your international expert, we
+    remain strictly focused on the intricacies of international transportation & use only the most reliable &
+    cost effective shipping or freight Companies to forward your goods to their destination hence, your move
+    whether by air, sea or land is guaranteed to be punctual & eventless.`,
+  },
+  {
+    title: "Global Destination Services",
+    description: `With an international network of highly qualified destination partners who are basically an extension of
+    our own services, we arrange necessary customs formalities at the arrival port / airport & coordinate
+    timely delivery of your goods to your new home where your valued possessions will be carefully unpacked,
+    inspected against the inventory drawn up at origin, positioned in appropriate rooms & debris removed the
+    same day. Our trusted destination partners assists you in inspecting your possessions as they are
+    delivered at your new home, noting any damage or missing items. We take full responsibility for your
+    consignment from pack-up through transit to arrival.`,
   },
 ];
