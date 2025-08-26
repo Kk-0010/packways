@@ -2,7 +2,6 @@ import { useState } from "react";
 import WhatsappIcon from "../../assets/whatsapp.png";
 import Logo from "../../assets/logo/logo3.png";
 
-
 const App = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [notificationCount, setNotificationCount] = useState(1);
@@ -72,7 +71,9 @@ const App = () => {
             <div className="bg-white p-3 rounded-lg shadow-md max-w-[80%] text-sm sm:text-base">
               <p>Hi there 👋</p>
               <p>How can we help you?</p>
-              <p className="pt-5">Talk to us for your reliable logistics needs!</p>
+              <p className="pt-5">
+                Talk to us for your reliable logistics needs!
+              </p>
             </div>
           </div>
 

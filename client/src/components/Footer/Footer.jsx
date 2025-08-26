@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail,Phone,MapPin,Linkedin,Twitter,Facebook,Instagram,} from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Instagram,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import PackwaysLogo from "../../assets/logo/logo2.png";
 
@@ -8,7 +16,7 @@ import {
   FOOTER_NAV_LINKS,
   FOOTER_CONTACTS,
   FOOTER_CERTIFICATIONS,
-  SOCIAL_LINKS
+  SOCIAL_LINKS,
 } from "../../constants";
 
 export default function Footer() {
