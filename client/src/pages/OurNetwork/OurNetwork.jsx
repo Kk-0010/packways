@@ -1,4 +1,3 @@
-// src/pages/OurNetwork/OurNetwork.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { NETWORK_LOCATIONS, ICONS } from "../../constants";
@@ -44,7 +43,7 @@ export default function OurNetwork() {
     <div className="flex items-start gap-2 mt-1">
       <Smartphone size={16} className="mt-1" />
       <div className="flex flex-col">
-        {numbers.split("-").map((num, i) => (
+        {numbers.split(",").map((num, i) => (
           <Link
             key={i}
             to={`tel:${num.trim()}`}
@@ -108,9 +107,12 @@ export default function OurNetwork() {
               </h2>
               <p className="text-blue-800 font-semibold">{location.company}</p>
               <Address address={location.address} />
-              <PhoneNumbers numbers={location.tel} />
+              {location.city !== "MUMBAI" && (
+                <PhoneNumbers numbers={location.tel} />
+              )}
               <MobileNumbers numbers={location.mobile} />
               <Email email={location.email} />
+              <Website website={location.website} />
               {location.note && (
                 <p className="mt-2 text-sm text-gray-600">
                   <strong>Note :</strong> {location.note}
