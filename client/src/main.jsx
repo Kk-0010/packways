@@ -16,6 +16,7 @@ import {
   OurNetwork,
   AlliedServices,
   SpectrumServices,
+  Contact,
 } from "./pages";
 
 const router = createBrowserRouter(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
         path="/our-services/spectrum-of-services"
         element={<SpectrumServices />}
       />
+      <Route path="contact" element={<Contact />} />
     </Route>
   )
 );

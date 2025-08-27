@@ -105,7 +105,9 @@ const Header = () => {
                 )
               )}
             </NavigationMenuList>
-            <Button type="primary" size="sm" label="Contact Us" />
+            <Link to="contact">
+              <Button type="primary" size="sm" label="Contact Us" />
+            </Link>
           </NavigationMenu>
         </div>
 
