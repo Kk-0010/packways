@@ -23,7 +23,7 @@ export default function About() {
 
         {/* Paragraphs */}
         <p className="text-justify text-gray-700 leading-relaxed mb-4">
-          <span className="font-bold">Packways Pvt. Ltd.</span> is a well
+          <span className="font-bold">PACKWAYS (P) Limited</span> is a well
           acknowledged removals specialist of India.
         </p>
 
@@ -34,7 +34,7 @@ export default function About() {
           </span>
           , its humble, yet, <span className="font-bold">pioneer</span> entry in
           the removals industry,{" "}
-          <span className="font-bold">Packways Pvt. Ltd.</span> has clearly
+          <span className="font-bold">PACKWAYS (P) Limited</span> has clearly
           established itself as a leading international relocation Company
           offering the finest, customized professional move management services,
           backed by a wealth of experience and an unparalleled reputation,
@@ -43,12 +43,12 @@ export default function About() {
 
         <p className="text-justify text-gray-700 leading-relaxed mb-4">
           Headquartered in <span className="font-bold">New Delhi</span>,{" "}
-          <span className="font-bold">Packways Pvt. Ltd.</span> operates a fully
-          comprehensive removal service of any magnitude to any destination
-          across the globe. Its nationwide presence is facilitated through its
-          own network of offices in the major business cities of{" "}
+          <span className="font-bold">PACKWAYS (P) Limited</span> operates a
+          fully comprehensive removal service of any magnitude to any
+          destination across the globe. Its nationwide presence is facilitated
+          through its own network of offices in the major business cities of{" "}
           <span className="font-bold">Mumbai, Bangalore & Chennai</span>. For
-          over 6 decades <span className="font-bold">Packways Pvt. Ltd.</span>{" "}
+          over 6 decades <span className="font-bold">PACKWAYS (P) Limited</span>{" "}
           has specialized in providing fully integrated solutions to companies
           and their international consignees. Our extensive network of agents
           allows us to manage every aspect of an employee's relocation, all
@@ -58,7 +58,7 @@ export default function About() {
         <p className="text-justify text-gray-700 leading-relaxed mb-4">
           Although relocation, whether domestic or international is a milestone
           event in life & can be intimidating to organisations and their
-          transferees, <span className="font-bold">Packways Pvt. Ltd.</span>{" "}
+          transferees, <span className="font-bold">PACKWAYS (P) Limited</span>{" "}
           understands that the first step to a successful international move is
           having a well thought-out plan. This we know having had decades of
           wide experience & the help of a strong global network, apart from the

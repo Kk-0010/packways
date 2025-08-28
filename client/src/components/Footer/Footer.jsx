@@ -136,7 +136,8 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="text-center text-gray-600 text-sm mt-6 border-t border-gray-300 pt-4">
-        © {new Date().getFullYear()} Packways. All rights reserved. |{" "}
+        © {new Date().getFullYear()} PACKWAYS (P) Limited . All rights reserved.
+        |{" "}
         <Link to="/privacy" className="hover:text-blue-600">
           Privacy Policy
         </Link>{" "}

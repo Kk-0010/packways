@@ -7,6 +7,8 @@ import Button from "./Generic/Button";
 import Testimonials from "../components/Home/Testimonials";
 import WhatsappChat from "./WhatsappChat/WhatsappChat";
 import Contact from "./Contact/Contact";
+import IndiaMap from "./Map/IndiaMap";
+import WorldMap from "./Map/WorldMap";
 
 export {
   Header,
@@ -18,4 +20,6 @@ export {
   Testimonials,
   WhatsappChat,
   Contact,
+  IndiaMap,
+  WorldMap,
 };
