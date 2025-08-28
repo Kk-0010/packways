@@ -620,3 +620,170 @@ export const spectrumServicesData = [
     consignment from pack-up through transit to arrival.`,
   },
 ];
+
+export const indiaMapPoints = [
+  {
+    id: 1,
+    name: "Mumbai, Maharashtra",
+    lat: 19.076,
+    lng: 72.8777,
+  },
+  {
+    id: 2,
+    name: "Delhi (NCT)",
+    lat: 28.6139,
+    lng: 77.209,
+  },
+  {
+    id: 3,
+    name: "Bengaluru, Karnataka",
+    lat: 12.9716,
+    lng: 77.5946,
+  },
+  {
+    id: 4,
+    name: "Chennai, Tamil Nadu",
+    lat: 13.0827,
+    lng: 80.2707,
+  },
+  {
+    id: 5,
+    name: "Hyderabad, Telangana",
+    lat: 17.385,
+    lng: 78.4867,
+  },
+  {
+    id: 6,
+    name: "Ahmedabad, Gujarat",
+    lat: 23.0225,
+    lng: 72.5714,
+  },
+  {
+    id: 7,
+    name: "Surat, Gujarat",
+    lat: 21.1702,
+    lng: 72.8311,
+  },
+  {
+    id: 8,
+    name: "Pune, Maharashtra",
+    lat: 18.5204,
+    lng: 73.8567,
+  },
+  {
+    id: 9,
+    name: "Kolkata, West Bengal",
+    lat: 22.5726,
+    lng: 88.3639,
+  },
+  {
+    id: 10,
+    name: "Coimbatore, Tamil Nadu",
+    lat: 11.0168,
+    lng: 76.9558,
+  },
+  {
+    id: 11,
+    name: "Nagpur, Maharashtra",
+    lat: 21.1458,
+    lng: 79.0882,
+  },
+  {
+    id: 12,
+    name: "Vadodara, Gujarat",
+    lat: 22.3072,
+    lng: 73.1812,
+  },
+  {
+    id: 13,
+    name: "Kanpur, Uttar Pradesh",
+    lat: 26.4499,
+    lng: 80.3319,
+  },
+  {
+    id: 14,
+    name: "Ludhiana, Punjab",
+    lat: 30.901,
+    lng: 75.8573,
+  },
+  {
+    id: 15,
+    name: "Jamshedpur, Jharkhand",
+    lat: 22.8046,
+    lng: 86.2029,
+  },
+  {
+    id: 16,
+    name: "Noida, Uttar Pradesh",
+    lat: 28.5355,
+    lng: 77.391,
+  },
+  {
+    id: 17,
+    name: "Gurugram, Haryana",
+    lat: 28.4595,
+    lng: 77.0266,
+  },
+];
+
+export const worldMapPoints = [
+  // North America
+  { id: 1, name: "California (USA)", lat: 36.77, lng: -119.42 },
+  { id: 2, name: "Texas (USA)", lat: 31.05, lng: -97.56 },
+  { id: 3, name: "New York (USA)", lat: 42.91, lng: -75.53 },
+  {
+    id: 4,
+    name: "Toronto (Canada)",
+    lat: 43.65,
+    lng: -79.38,
+  },
+  { id: 5, name: "Ontario (Canada)", lat: 50.0, lng: -85.0 },
+  { id: 6, name: "Quebec (Canada)", lat: 52.94, lng: -73.55 },
+  { id: 7, name: "Mexico City (Mexico)", lat: 19.43, lng: -99.13 },
+  // South America
+  { id: 8, name: "São Paulo (Brazil)", lat: -23.55, lng: -46.63 },
+  { id: 9, name: "Rio de Janeiro (Brazil)", lat: -22.91, lng: -43.17 },
+  { id: 10, name: "Buenos Aires (Argentina)", lat: -34.61, lng: -58.38 },
+  { id: 11, name: "Lima (Peru)", lat: -12.05, lng: -77.04 },
+  { id: 12, name: "Bogotá (Colombia)", lat: 4.71, lng: -74.07 },
+  // Europe
+  { id: 13, name: "Bavaria (Germany)", lat: 48.79, lng: 11.49 },
+  { id: 14, name: "Catalonia (Spain)", lat: 41.39, lng: 2.17 },
+  { id: 15, name: "Lombardy (Italy)", lat: 45.47, lng: 9.19 },
+  { id: 16, name: "Moscow Oblast (Russia)", lat: 55.75, lng: 37.62 },
+  { id: 17, name: "London (UK)", lat: 51.5, lng: -0.2 },
+  { id: 18, name: "Paris (France)", lat: 48.85, lng: 2.35 },
+  // Asia
+  {
+    id: 19,
+    name: "Delhi (India)",
+    lat: 28.6139,
+    lng: 77.209,
+  },
+  {
+    id: 20,
+    name: "Dhaka (Bangladesh)",
+    lat: 13.43,
+    lng: 100.6,
+  },
+  {
+    id: 21,
+    name: "Singapore (Malaysia)",
+    lat: 1.35,
+    lng: 103.82,
+  },
+  { id: 22, name: "Beijing Municipality (China)", lat: 39.9, lng: 116.4 },
+  { id: 23, name: "Shanghai (China)", lat: 31.23, lng: 121.47 },
+  { id: 24, name: "Tokyo (Japan)", lat: 35.68, lng: 139.76 },
+  { id: 25, name: "Seoul (South Korea)", lat: 37.57, lng: 126.98 },
+  { id: 26, name: "Bangkok (Thailand)", lat: 13.75, lng: 100.5 },
+  // Africa
+  { id: 27, name: "Cape Town (South Africa)", lat: -33.93, lng: 18.42 },
+  { id: 28, name: "Cairo (Egypt)", lat: 30.04, lng: 31.24 },
+  { id: 29, name: "Lagos (Nigeria)", lat: 6.52, lng: 3.37 },
+  { id: 30, name: "Casablanca (Morocco)", lat: 33.57, lng: -7.59 },
+  // Oceania
+  { id: 31, name: "Victoria (Australia)", lat: -37.47, lng: 144.78 },
+  { id: 32, name: "Queensland (Australia)", lat: -20.92, lng: 142.7 },
+  { id: 33, name: "Auckland (New Zealand)", lat: -36.85, lng: 174.76 },
+];

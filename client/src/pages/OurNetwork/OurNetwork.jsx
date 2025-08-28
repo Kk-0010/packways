@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { NETWORK_LOCATIONS, ICONS } from "../../constants";
 import NetworkBanner from "../../assets/our-network.jpg";
+import { IndiaMap, WorldMap } from "@/components";
 
 export default function OurNetwork() {
   const { Phone, Smartphone, Mail, Globe, MapPin } = ICONS;
@@ -91,9 +91,40 @@ export default function OurNetwork() {
           alt="Our Network"
           className="w-full h-64 object-cover rounded-lg mb-6 shadow"
         />
-        <h1 className="text-3xl font-bold text-blue-900 mb-6">Our Network</h1>
+        <div>
+          <h1 className="text-3xl font-bold text-blue-900 mb-6">Our Network</h1>
+          {/* India Network Map */}
+          <div className="max-w-5xl mx-auto text-center">
+            <p>
+              With a strong PAN India presence and an extensive reach in 50+
+              international destinations. Our wide network ensures reliable,
+              efficient, and timely movement of goods across domestic and global
+              supply chains.
+            </p>
+            <h2 className="text-2xl font-bold text-blue-900 mb-2">
+              Our Presence Across India
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Explore our offices and partners spread across major cities in
+              India.
+            </p>
+            <IndiaMap />
+          </div>
 
-        {/* Head Office (First Location) */}
+          {/* Global Network Map */}
+          <div className="mt-16 max-w-5xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-blue-900 mb-2">
+              Our Global Reach
+            </h2>
+            <p className="text-gray-600 mb-6">
+              We are connected worldwide through trusted partners and
+              associates.
+            </p>
+            <WorldMap />
+          </div>
+        </div>
+
+        {/* Locations */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {NETWORK_LOCATIONS.map((location, index) => (
             <div
