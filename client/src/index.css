@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "leaflet/dist/leaflet.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -173,16 +174,20 @@
   body {
     @apply bg-background text-foreground;
   }
+  .custom,
+  li {
+    @apply text-justify hyphens-auto break-words;
+  }
 }
 
- /* Animations for scrolling */
+/* Animations for scrolling */
 .animate-scroll {
   animation: scroll 8s linear infinite;
 }
 
 .animate-reverse-scroll {
   display: flex;
-  animation: scroll-reverse 8s linear infinite; 
+  animation: scroll-reverse 8s linear infinite;
 }
 
 .group:hover .animate-scroll,
@@ -207,6 +212,3 @@
     transform: translateX(0%);
   }
 }
-
-
-

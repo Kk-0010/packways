@@ -8,8 +8,18 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Home, About, Testimonials} from "./pages";
-
+import {
+  Home,
+  About,
+  Testimonials,
+  CustomRegulations,
+  OurNetwork,
+  AlliedServices,
+  SpectrumServices,
+  Contact,
+  CorporateClient,
+  EmbassiesClient,
+} from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +27,25 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="testimonials" element={<Testimonials />} />
+      <Route path="custom-regulations" element={<CustomRegulations />} />
+      <Route path="our-network" element={<OurNetwork />} />
+      <Route
+        path="/our-services/allied-services"
+        element={<AlliedServices />}
+      />
+      <Route
+        path="/our-services/spectrum-of-services"
+        element={<SpectrumServices />}
+      />
+      <Route path="contact" element={<Contact />} />
+      <Route
+        path="/our-clientele/corporate-client"
+        element={<CorporateClient />}
+      />
+      <Route
+        path="/our-clientele/embassies-client"
+        element={<EmbassiesClient />}
+      />
     </Route>
   )
 );
