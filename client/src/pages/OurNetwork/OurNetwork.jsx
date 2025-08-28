@@ -91,20 +91,22 @@ export default function OurNetwork() {
           alt="Our Network"
           className="w-full h-64 object-cover rounded-lg mb-6 shadow"
         />
-        <div>
-          <h1 className="text-3xl font-bold text-blue-900 mb-6">Our Network</h1>
+        <div className="mb-12">
+          <h1 className="text-3xl font-bold text-gray-800 mb-4 border-b pb-2">
+            Our Network
+          </h1>
           {/* India Network Map */}
-          <div className="max-w-5xl mx-auto text-center">
-            <p>
+          <div className="max-w-5xl mx-auto">
+            <p className="text-justify text-gray-700 leading-relaxed mb-4">
               With a strong PAN India presence and an extensive reach in 50+
               international destinations. Our wide network ensures reliable,
               efficient, and timely movement of goods across domestic and global
               supply chains.
             </p>
-            <h2 className="text-2xl font-bold text-blue-900 mb-2">
+            <h2 className="text-xl font-semibold mb-2 text-blue-600">
               Our Presence Across India
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-justify text-gray-700 leading-relaxed mb-4">
               Explore our offices and partners spread across major cities in
               India.
             </p>
@@ -112,11 +114,11 @@ export default function OurNetwork() {
           </div>
 
           {/* Global Network Map */}
-          <div className="mt-16 max-w-5xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-blue-900 mb-2">
+          <div className="mt-12 max-w-5xl mx-auto">
+            <h2 className="text-xl font-semibold mb-2 text-blue-600">
               Our Global Reach
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-justify text-gray-700 leading-relaxed mb-4">
               We are connected worldwide through trusted partners and
               associates.
             </p>
