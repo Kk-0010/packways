@@ -31,7 +31,7 @@ const Contact = () => {
         <div></div>
         <div>
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            PACKWAYS PRIVATE LTD., NEW DELHI
+            PACKWAYS (P) Limited, NEW DELHI
           </h3>
           <ul className="space-y-3 text-gray-700 text-sm">
             <li className="flex items-center gap-2">

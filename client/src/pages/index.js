@@ -6,6 +6,8 @@ import OurNetwork from "./OurNetwork/OurNetwork";
 import Contact from "./Contact/Contact";
 import AlliedServices from "./OurServices/AlliedServices";
 import SpectrumServices from "./OurServices/SpectrumServices";
+import CorporateClient from "./OurClientele/CorporateClient";
+import EmbassiesClient from "./OurClientele/EmbassiesClient";
 
 export {
   Home,
@@ -16,4 +18,6 @@ export {
   Contact,
   AlliedServices,
   SpectrumServices,
+  CorporateClient,
+  EmbassiesClient,
 };
