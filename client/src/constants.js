@@ -1863,12 +1863,12 @@ export const embassiesClients = [
   },
   {
     id: 81,
-    name: "Embassy of the United States",
+    name: "Embassy of the USA",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_the_United_States_%28Web_Colors%29.svg/500px-Flag_of_the_United_States_%28Web_Colors%29.svg.png",
   },
   {
     id: 82,
-    name: "Embassy of the UAE",
+    name: "UAE Embassy",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Emblem_of_the_United_Arab_Emirates.svg/594px-Emblem_of_the_United_Arab_Emirates.svg.png",
   },
   {
